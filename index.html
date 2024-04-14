@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <title>Soybean Disease Detection</title>
+</head>
+<body>
+
+    <div class="detail">
+        Soybean Disease Detector<br>
+        <p class="sub-detail">A ML/DL tool</p>
+    </div>
+    
+    <div class="container">
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="file" name="file" accept="image/*" hidden>
+            <div class="img-area" data-img="">
+                <i class='bx bxs-cloud-upload icon'></i>
+                <h3>Upload Image</h3>
+                <p>Image size must be less than <span>2MB</span></p>
+            </div>
+            <button type="button" class="select-image">Select Image</button>
+            <!-- <button type="button" class="predict-button">Predict</button> New button for prediction -->
+        </form>
+        <div class="prediction-output" style="display: none;"> <!-- Output area initially hidden -->
+            <p id="predicted-class"></p>
+            <p id="predicted-confidence"></p>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
