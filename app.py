@@ -8,8 +8,8 @@ import numpy as np
 from io import BytesIO
 from PIL import Image
 
-# import os
-# os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
+import os
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
 import tensorflow as tf
 
